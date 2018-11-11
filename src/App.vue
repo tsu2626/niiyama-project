@@ -1,84 +1,79 @@
 <template>
   <div id="app">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    
     <nav class="navbar navbar-dark navbar-expand-lg navbar-light" style="background-color: #1995E0;">
       <a class="navbar-brand" href="#">#あたしと新山詩織 プロジェクト</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-item nav-link active" href="#"> <span class="sr-only">(current)</span></a>
-          <a class="nav-item nav-link" href="#about">プロジェクトについて</a>
-          <a class="nav-item nav-link" href="#tweet">ツイート</a>
-          <a class="nav-item nav-link" href="#form">Webフォーム</a>
-          <a class="nav-item nav-link" href="#letter">お手紙</a>
-        </div>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href=""> <span class="sr-only">(current)</span>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#message">プロジェクトについて</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#tweet">ツイート</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#form">Webフォーム</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#letter">お手紙</a>
+          </li>
+        </ul>
       </div>
     </nav>
     
-    <!-- <img src="./assets/logo.png"> -->
-    <div id="message">
-      <u id="about"><h1> {{ msg }}</h1></u>
-    </div>
-    <div id="message">
-      <h3>10月20日。突然の活動休止発表。</h3>
-      <h3>今、応援しているファンができることはなにか。</h3><br>
-    </div>
-    <a class="twitter-timeline" data-width="900" data-height="500" href="https://twitter.com/atashito_shiori?ref_src=twsrc%5Etfw">Tweets by atashito_shiori</a>
-    
-    <div id="item">
-      <u><h2 id="tweet">新山詩織さんへの想いをツイートで共有しよう</h2></u>
-    </div>
-    <div id="twButton">
-      <a href="https://twitter.com/intent/tweet?button_hashtag=あたしと新山詩織&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-show-count="false">#あたしと新山詩織をツイートする</a><br>
-    </div>
-    <a class="twitter-timeline form" data-lang="ja" data-width="500" data-height="900" href="https://twitter.com/atashito_shiori/likes?ref_src=twsrc%5Etfw">#あたしと新山詩織のツイート</a>
-    
-    <div id="item">
-      <u><h2 id="form">Webフォームから想いを伝えてみよう</h2></u>
-    </div>
-    <iframe class="100%" style="margin: 5px;
-      transform-origin: 0 0; 
-      -moz-transform: scale(1) ; 
-      -webkit-transform: scale(1); 
-      -o-transform: scale(1); 
-      -ms-transform: scale(1);" 
-      src="http://niiyama-shiori.com/message/index.html" 
-      width="600" height="1200">
-    </iframe>
-
-    <div id="item">
-      <u><h2 id="letter">お手紙で想いを伝えてみよう</h2></u>
-    </div>
-    <div id="adress">
-      <p>〒106-0032<br>
-          東京都港区六本木５－２－２　トーマスビル<br>
-        「新山詩織ファンレター」係<br>
-      </p>
-    </div>
-    <footer class="footer footer-dark mt-auto py-3" style="background-color: #1995E0;">
-      <div class="container">
-        <a href="https://twitter.com/atashito_shiori" class="footer-font">お問い合わせはTwitterのDMまで</a>
+    <div id="backgroud">
+      <!-- <img src="./assets/logo.png"> -->
+      <div id="message">
+        <strong><h1 id="about" style="color: #fff;"> {{ msg }}</h1></strong>
       </div>
-    </footer>
+      <div id="message">
+        <h3>10月20日。突然の活動休止発表。</h3>
+        <h3>今、応援しているファンができることはなにか。</h3><br>
+      </div>
+      <a class="twitter-timeline" data-width="900" data-height="500" href="https://twitter.com/atashito_shiori?ref_src=twsrc%5Etfw">Tweets by atashito_shiori</a>
+      
+      <div id="item">
+        <h2 id="tweet" style="color: #fff;">新山詩織さんへの想いをツイートで共有しよう</h2>
+      </div>
+      <div class="btn btn-primary badge-pill" style="background-color: #1995E0;">
+        <a href="https://twitter.com/intent/tweet?button_hashtag=あたしと新山詩織&ref_src=twsrc%5Etfw" data-show-count="false" style="color: white;">#あたしと新山詩織をツイートする</a><br>
+      </div>
+      <dir id="twtimeline">
+        <a class="twitter-timeline form" data-lang="ja" data-width="500" data-height="900" href="https://twitter.com/atashito_shiori/likes?ref_src=twsrc%5Etfw">#あたしと新山詩織のツイート</a>
+      </dir>    
+      <div id="item">
+        <h2 id="form" style="color: #fff;">Webフォームから想いを伝えてみよう</h2>
+      </div>
+      <a href="http://niiyama-shiori.com/message/index.html" class="btn btn-primary badge-pill" style="background-color: #1995E0;">メッセージを送る</a>
+      <!-- <iframe class="100%" style="margin: 5px;
+        transform-origin: 0 0;" 
+        src="http://niiyama-shiori.com/message/index.html" 
+        width="600" height="1200">
+      </iframe> -->
+      <div id="item">
+        <h2 id="letter" style="color: #fff;">お手紙で想いを伝えてみよう</h2>
+      </div>
+      <div id="adress">
+        <p>〒106-0032<br>
+            東京都港区六本木５－２－２　トーマスビル<br>
+          「新山詩織ファンレター」係<br>
+        </p>
+      </div>
+      <footer class="footer footer-dark mt-auto py-3" style="background-color: #1995E0;">
+        <div class="container">
+          <a href="https://twitter.com/atashito_shiori" class="footer-font">お問い合わせはTwitterのDMまで</a>
+        </div>
+      </footer>
+    </div>
   </div>
 </template>
 
-<script src="https://www.gstatic.com/firebasejs/5.5.7/firebase.js"></script>
-<script>
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyCfsTfHQHNbSySDp5EWRrqXajS4Vcll34w",
-    authDomain: "niiyama-project.firebaseapp.com",
-    databaseURL: "https://niiyama-project.firebaseio.com",
-    projectId: "niiyama-project",
-    storageBucket: "",
-    messagingSenderId: "152916918339"
-  };
-  firebase.initializeApp(config);
-</script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
@@ -129,6 +124,14 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+}
+
+#twtimeline{
+  padding: 5%;
+}
+
+#backgroud{
+  background-image: linear-gradient(-90deg, #1A55AD, #3DD2F0);
 }
 
 h1 {

@@ -1,5 +1,7 @@
 {
   "projects": {
-    "master": "niiyama-project"
+    "master": "niiyama-project",
+    "default": "niiyama-project",
+    "y": "niiyama-project-0210"
   }
 }
