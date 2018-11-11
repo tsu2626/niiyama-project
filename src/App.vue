@@ -45,7 +45,7 @@
         <a href="https://twitter.com/intent/tweet?button_hashtag=あたしと新山詩織&ref_src=twsrc%5Etfw" data-show-count="false" style="color: white;">#あたしと新山詩織をツイートする</a><br>
       </div>
       <dir id="twtimeline">
-        <a class="twitter-timeline form" data-lang="ja" data-width="500" data-height="900" href="https://twitter.com/atashito_shiori/likes?ref_src=twsrc%5Etfw">#あたしと新山詩織のツイート</a>
+        <a class="twitter-timeline form" data-lang="ja" data-width="900" data-height="500" href="https://twitter.com/atashito_shiori/likes?ref_src=twsrc%5Etfw">#あたしと新山詩織のツイート</a>
       </dir>    
       <div id="item">
         <h2 id="form" style="color: #fff;">Webフォームから想いを伝えてみよう</h2>
